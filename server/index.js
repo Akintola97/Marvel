@@ -1,14 +1,12 @@
 const express = require('express');
 const app = express();
-const hostName = 'localhost'
-const port = 5000;
+require('dotenv').config()
 const axios = require('axios');
 const crypto = require("crypto")
 var cors = require('cors');
 var bodyParser = require('body-parser')
-
-
-require('dotenv').config()
+const port = process.env.PORT || 5000
+const hostName = 'localhost'
 
 
 app.use(cors())
