@@ -18,7 +18,7 @@ const About = () => {
 
     useEffect(()=>{
         const fetchData = async () =>{
-            const data = await axios.post('/data', {id})
+            const data = await axios.post('https://marvel-api-65d1.onrender.com/data', {id})
             setInfo(data.data)
         }
        
