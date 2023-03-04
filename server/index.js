@@ -30,10 +30,9 @@ app.listen(port, hostName, ()=>{
 
 
 app.post('/', async (req, res)=>{
-//    const response =  axios.get(`https://gateway.marvel.com:443/v1/public/characters/1009664?ts=${ts}&apiKey=${publicKey}&hash=${hash}`)
     const {name} = req.body
-   const response = await axios.get(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${name}&ts=${ts}&apikey=${publicKey}&hash=${hash}`)
-  res.send(response.data)
+    const response = await axios.get(`https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${name}&ts=${ts}&apikey=${publicKey}&hash=${hash}`)
+    res.send(response.data)
 })
 
 
