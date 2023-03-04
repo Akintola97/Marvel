@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams, Link, useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { useEffect } from 'react';
 import { useState } from 'react';
@@ -39,7 +39,7 @@ const About = () => {
                 <h1 className='text-center text-[8vmin] py-3 font-bold'>{data.name}</h1>
                 <p className='px-5 text-center text-[3.5vmin]'>{data.description ? data.description : 'No description is available at this time'}</p>
                 <div className='w-full h-full p-10 text-center'>
-                  <h1 className='text-[3.75vmin] font-bold'>{data.name} Comics</h1>
+                  <h1 className='text-[3.75vmin] font-bold'>{data.name}'s Comics</h1>
                   <ul className='p-3 flex flex-wrap justify-center'>
                   {data.comics.items.map((comics)=>{
       

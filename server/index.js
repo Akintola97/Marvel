@@ -23,12 +23,6 @@ const privateKey = process.env.PRIVATE_KEY
 const hash = crypto.createHash('md5').update(ts+privateKey+publicKey).digest('hex')
 
 
-
-
-// console.log(privateKey)
-// console.log(publicKey)
-
-
 app.listen(port, hostName, ()=>{
     console.log(`The server is running on ${hostName}${port}`)
 })
