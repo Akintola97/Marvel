@@ -5,8 +5,10 @@ const axios = require('axios');
 const crypto = require("crypto")
 var cors = require('cors');
 var bodyParser = require('body-parser')
-const port = process.env.PORT || 5000
+// const port = process.env.PORT || 5000
+
 const hostName = 'localhost'
+const port = 5000
 
 
 app.use(cors())
