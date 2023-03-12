@@ -17,7 +17,7 @@ const [characterdata, setCharacterData] = useState({})
 
   useEffect(()=>{
 const fetchData = async()=>{
-  const response = await axios.post('/', {name})
+  const response = await axios.post('https://marvel-api-65d1.onrender.com/', {name})
   setCharacterData(response.data)
 }
 if (name){
