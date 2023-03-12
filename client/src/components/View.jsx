@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-const View = ({element, character}) => {
+const View = ({element}) => {
 
     const imageSize = 'standard_fantastic'
     const navigate = useNavigate();
