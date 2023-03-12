@@ -9,7 +9,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path={"https://marvel-api-65d1.onrender.com/"} element={<Home/>} />
+        <Route path={"https://marvel-characters.onrender.com"} element={<Home/>} />
         <Route path={"/:id"} element={<About/>} />
       </Routes>
      
