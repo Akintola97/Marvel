@@ -6,7 +6,7 @@ const crypto = require("crypto")
 var cors = require('cors');
 var bodyParser = require('body-parser')
 const port = process.env.PORT || 5000
-
+const hostname = 'localhost'
 
 
 
@@ -23,7 +23,7 @@ const hash = crypto.createHash('md5').update(ts+privateKey+publicKey).digest('he
 
 
 app.listen(port, ()=>{
-    console.log(`The server is running on ${port}`)
+    console.log(`The server is running on ${hostname}${port}`)
 })
 
 
