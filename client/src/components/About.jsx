@@ -23,7 +23,7 @@ const About = () => {
         }
        
         fetchData()
-    }, [])
+    }, [id])
 
   return (
 <>
