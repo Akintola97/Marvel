@@ -23,7 +23,7 @@ const hash = crypto.createHash('md5').update(ts+privateKey+publicKey).digest('he
 
 
 app.listen(port, ()=>{
-    console.log(`The server is running on ${hostName}${port}`)
+    console.log(`The server is running on ${port}`)
 })
 
 
