@@ -10,10 +10,6 @@ const [name, setName] = useState("")
 const [characterdata, setCharacterData] = useState({})
 
 
-// const handleSubmit= async(e)=> {
-//     e.preventDefault();
-
-  // const response = await axios.post('https://marvel-api-65d1.onrender.com/', {name})
 
   useEffect(()=>{
 const fetchData = async()=>{
@@ -26,12 +22,6 @@ if (name){
 
   }, [name])
 
-   
- 
-
-
-  
-// }
 
 
 
