@@ -22,7 +22,7 @@ else{
 {element && element.results.map((data)=>{
   return (
     <>
-  <img className='p-2 text-center' key={data.id} onClick={()=>window.open(`/${data.id}`, '_blank')} src = {`${data.thumbnail.path}/${imageSize}.${data.thumbnail.extension}`} alt={element.name} />
+  <img className='p-2 text-center' key={data.id} onClick={()=>window.open(`${data.id}`, '_blank')} src = {`${data.thumbnail.path}/${imageSize}.${data.thumbnail.extension}`} alt={element.name} />
     </>
 )
 
