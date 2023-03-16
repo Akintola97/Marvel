@@ -26,7 +26,7 @@ const handleSubmit= async(e)=> {
     e.preventDefault();
 
   const response = await axios.post('https://marvel-api-65d1.onrender.com/', {name})
-setCharacterData(response)
+setCharacterData(response.data)
 }
   return (
     <>
